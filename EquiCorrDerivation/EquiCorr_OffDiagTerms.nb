@@ -18,48 +18,6 @@ WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-Cell[BoxData["$Path"], "Input",
- CellChangeTimes->{{3.895597031283068*^9, 3.895597032066943*^9}},
- CellLabel->"In[1]:=",ExpressionUUID->"a44ca1a7-78e2-464b-8652-8837c817f8ab"],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-  "\"\<C:\\\\Users\\\\ber881\\\\AppData\\\\Roaming\\\\Mathematica\\\\\
-DocumentationIndices\>\"", ",", 
-   "\"\<C:\\\\Program Files\\\\Wolfram \
-Research\\\\Mathematica\\\\13.1\\\\SystemFiles\\\\Links\>\"", ",", 
-   "\"\<C:\\\\Users\\\\ber881\\\\AppData\\\\Roaming\\\\Mathematica\\\\Kernel\>\
-\"", ",", 
-   "\"\<C:\\\\Users\\\\ber881\\\\AppData\\\\Roaming\\\\Mathematica\\\\\
-Autoload\>\"", ",", 
-   "\"\<C:\\\\Users\\\\ber881\\\\AppData\\\\Roaming\\\\Mathematica\\\\\
-Applications\>\"", ",", "\"\<C:\\\\ProgramData\\\\Mathematica\\\\Kernel\>\"", 
-   ",", "\"\<C:\\\\ProgramData\\\\Mathematica\\\\Autoload\>\"", ",", 
-   "\"\<C:\\\\ProgramData\\\\Mathematica\\\\Applications\>\"", ",", 
-   "\"\<.\>\"", ",", "\"\<C:\\\\Users\\\\ber881\>\"", ",", 
-   "\"\<C:\\\\Program Files\\\\Wolfram \
-Research\\\\Mathematica\\\\13.1\\\\AddOns\\\\Packages\>\"", ",", 
-   "\"\<C:\\\\Program Files\\\\Wolfram \
-Research\\\\Mathematica\\\\13.1\\\\SystemFiles\\\\Autoload\>\"", ",", 
-   "\"\<C:\\\\Program Files\\\\Wolfram \
-Research\\\\Mathematica\\\\13.1\\\\AddOns\\\\Autoload\>\"", ",", 
-   "\"\<C:\\\\Program Files\\\\Wolfram \
-Research\\\\Mathematica\\\\13.1\\\\AddOns\\\\Applications\>\"", ",", 
-   "\"\<C:\\\\Program Files\\\\Wolfram \
-Research\\\\Mathematica\\\\13.1\\\\AddOns\\\\ExtraPackages\>\"", ",", 
-   "\"\<C:\\\\Program Files\\\\Wolfram \
-Research\\\\Mathematica\\\\13.1\\\\SystemFiles\\\\Kernel\\\\Packages\>\"", 
-   ",", "\"\<C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\13.1\\\
-\\Documentation\\\\English\\\\System\>\"", ",", 
-   "\"\<C:\\\\Program Files\\\\Wolfram \
-Research\\\\Mathematica\\\\13.1\\\\SystemFiles\\\\Data\\\\ICC\>\"", ",", 
-   "\"\<C:\\\\Program Files\\\\Wolfram \
-Research\\\\Mathematica\\\\13.1\\\\Documentation\\\\ChineseSimplified\\\\\
-System\\\\\>\""}], "}"}]], "Input",
- CellChangeTimes->{3.8974277885094004`*^9},
- CellLabel->
-  "In[109]:=",ExpressionUUID->"d1451701-e57c-4483-bb39-1f54a01c390d"],
 
 Cell[CellGroupData[{
 
@@ -67,8 +25,7 @@ Cell[BoxData[
  RowBox[{"AppendTo", "[", 
   RowBox[{
   "$Path", ",", " ", 
-   "\"\<G:\\\\My \
-Drive\\\\Pehlevan_Lab\\\\MathemtaicaFiles\\\\BlockRSCLibs\>\""}], 
+   "\"\<-----Add Your Path Here ----\\\\BlockRSCLibs\>\""}], 
   "]"}]], "Input",
  CellChangeTimes->{{3.8955948712979736`*^9, 3.8955948950238743`*^9}, {
    3.895595100513607*^9, 3.895595102752627*^9}, {3.89559531125063*^9, 
@@ -78,47 +35,6 @@ Drive\\\\Pehlevan_Lab\\\\MathemtaicaFiles\\\\BlockRSCLibs\>\""}],
    3.897357321833981*^9}},
  CellLabel->
   "In[110]:=",ExpressionUUID->"6bcb6cd5-c929-4ad7-9117-d048c045d7bd"],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"\<\"C:\\\\Users\\\\ber881\\\\AppData\\\\Roaming\\\\Mathematica\\\\\
-DocumentationIndices\"\>", 
-   ",", "\<\"C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\13.1\\\
-\\SystemFiles\\\\Links\"\>", 
-   ",", "\<\"C:\\\\Users\\\\ber881\\\\AppData\\\\Roaming\\\\Mathematica\\\\\
-Kernel\"\>", 
-   ",", "\<\"C:\\\\Users\\\\ber881\\\\AppData\\\\Roaming\\\\Mathematica\\\\\
-Autoload\"\>", 
-   ",", "\<\"C:\\\\Users\\\\ber881\\\\AppData\\\\Roaming\\\\Mathematica\\\\\
-Applications\"\>", ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Kernel\"\>", 
-   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Autoload\"\>", 
-   ",", "\<\"C:\\\\ProgramData\\\\Mathematica\\\\Applications\"\>", 
-   ",", "\<\".\"\>", ",", "\<\"C:\\\\Users\\\\ber881\"\>", 
-   ",", "\<\"C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\13.1\\\
-\\AddOns\\\\Packages\"\>", 
-   ",", "\<\"C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\13.1\\\
-\\SystemFiles\\\\Autoload\"\>", 
-   ",", "\<\"C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\13.1\\\
-\\AddOns\\\\Autoload\"\>", 
-   ",", "\<\"C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\13.1\\\
-\\AddOns\\\\Applications\"\>", 
-   ",", "\<\"C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\13.1\\\
-\\AddOns\\\\ExtraPackages\"\>", 
-   ",", "\<\"C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\13.1\\\
-\\SystemFiles\\\\Kernel\\\\Packages\"\>", 
-   ",", "\<\"C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\13.1\\\
-\\Documentation\\\\English\\\\System\"\>", 
-   ",", "\<\"C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\13.1\\\
-\\SystemFiles\\\\Data\\\\ICC\"\>", 
-   ",", "\<\"C:\\\\Program Files\\\\Wolfram Research\\\\Mathematica\\\\13.1\\\
-\\Documentation\\\\ChineseSimplified\\\\System\\\\\"\>", 
-   ",", "\<\"G:\\\\My \
-Drive\\\\Pehlevan_Lab\\\\MathemtaicaFiles\\\\BlockRSCLibs\"\>"}], 
-  "}"}]], "Output",
- CellChangeTimes->{3.8973573235707216`*^9, 3.897427801495299*^9},
- CellLabel->
-  "Out[110]=",ExpressionUUID->"4554c4c5-b634-44c3-8462-8a9c0c3e0905"]
-}, Open  ]],
 
 Cell[BoxData[{
  RowBox[{"<<", "RSCMatrixOps.m"}], "\[IndentingNewLine]", 
