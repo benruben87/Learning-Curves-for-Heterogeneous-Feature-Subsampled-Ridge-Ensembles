@@ -14,6 +14,8 @@ RSCmultiply::usage = "Multiplies two RSC matrices provided they have compatible 
 RSCmultiplylist::usage = "Multiplies a list of RSC matrices provided they have compatible indices"
 RSCinverse::usage = "Inverse of square RS matrix"
 RSCtrace::usage = "Trace of square RS matrix"
+RSCdet::usage = "Determinant of square RS matrix"
+RSCeigs::usage = "Eigenvalues of square RS matrix"
 RSCsum::usage = "Sum over all elements of an RSC matrix"
 RSCscalarmultiply::usage = "scalar multiple of an RSC matrix"
 RSretile::usage = "Assigns a new tiling to an RS matrix (square) with the given dimensions of the diagonal blocks.  Returns a BlockRSCMatrix"
@@ -67,6 +69,16 @@ RSCtrace[{N_, M_, a_, b_}] := Module[{},
     N*(a+b)
 ]
 
+RSCdet[{N_, M_, a_, b_}] := Module[{},
+    Assert[Simplify[N] == Simplify[M], "Determinant can only be used on square matrices"];
+    a^(N-1)*(a+N*b)
+]
+
+RSCeigs[{N_, M_, a_, b_}] := Module[{},
+    Assert[Simplify[N] == Simplify[M], "Eigs can only be used on square matrices"];
+    {a, a+N*b}
+]
+
 RSCsum[{N_, M_, a_, b_}] := N*a + N*M*b
 
 RSCscalarmultiply[c_, M_] := (
@@ -92,4 +104,7 @@ RSCtranspose[M_] := {M[[2]], M[[1]], M[[3]], M[[4]]}
 End[] (* End Private Context *)
 
 EndPackage[]
+
+
+
 

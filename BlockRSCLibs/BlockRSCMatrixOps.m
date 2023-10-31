@@ -13,6 +13,7 @@ BlockRSCsum::usage = "Sums all elements of a BlockRS matrix"
 BlockRSCscalarmultiply::usage = "multiply BlockRSC matrix by a scalar."
 BlockRSCtranspose::usage = "Takes the transpose of a BlockRSC matrix."
 BlockRSCinverse::usage = "Recursive algorithm to invert BlockRSC matrix"
+BlockRSCdet::usage = "Recursive algorithm to take determinant of BlockRSC matrix"
 
 Begin["`Private`"] (* Begin Private Context *)
 
@@ -93,7 +94,31 @@ BlockRSCinverse[A_] := Module[{UL, UR, BL, BR, ULinv, SchurComplement, SchurComp
     ];
     result
 ]
+BlockRSCdet[A_] := Module[{UL, UR, BL, BR, ULinv, ULdet, SchurComplement, SchurComplementdet, n, m, x, result},
+    {n, m, x} = Dimensions[A];
+
+    Assert[Simplify[n] == Simplify[m], "Matrix must be square"];
+    If[n == 1,
+        result = RSCdet[A[[1, 1]]],
+        UL = A[[1;;1, 1;;1]];
+        UR = A[[1;;1, 2;;m]];
+        BL = A[[2;;n, 1;;1]];
+        BR = A[[2;;n, 2;;m]];
+
+        ULinv = {{RSCinverse[UL[[1,1]]]}};(*UL is a single RS matrix*)
+        ULdet = RSCdet[UL[[1,1]]];(*UL is a single RS matrix*)
+
+        SchurComplement = BlockRSCsubtract[BR, BlockRSCmultiplylist[{BL, ULinv, UR}]]; (* Assuming you have BlockRSCsubtract function *)
+        SchurComplementdet = BlockRSCdet[SchurComplement]; (* Recursive call here! *)
+        
+        result = ULdet*SchurComplementdet;
+    ];
+    result
+]
 
 End[] (* End Private Context *)
 
 EndPackage[]
+
+
+
